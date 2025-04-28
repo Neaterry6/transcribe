@@ -7,4 +7,4 @@ app.use(express.json());
 app.post("/transcribe", transcribe);
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`🚀 Transcribe API running on http://localhost:${PORT}`))
+app.listen(PORT, () => console.log(`🎀 Transcribe API running on http://localhost:${PORT}`));
