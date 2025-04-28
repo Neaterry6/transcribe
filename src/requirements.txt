@@ -1,0 +1,4 @@
+flask
+vosk
+numpy
+soundfile
