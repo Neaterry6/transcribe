@@ -22,4 +22,4 @@ const transcribe = async (req, res) => {
   }
 };
 
-module.exports = upload.single("audio"), transcribe
+module.exports = upload.single("audio"), transcribe;
