@@ -4,9 +4,11 @@ import json
 
 class VoskTranscriber:
     def __init__(self, model_path):
+        """Initialize Vosk model"""
         self.model = Model(model_path)
 
     def transcribe(self, audio_path):
+        """Process an audio file and return transcription"""
         wf = wave.open(audio_path, "rb")
         recognizer = KaldiRecognizer(self.model, wf.getframerate())
         recognizer.SetWords(True)
@@ -20,4 +22,4 @@ class VoskTranscriber:
                 result = json.loads(recognizer.Result())
                 transcription += result.get("text", "") + " "
 
-        return transcription.strip(
+        return transcription.strip()
