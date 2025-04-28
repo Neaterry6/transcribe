@@ -1,7 +1,7 @@
 {
   "name": "transcribe-api",
   "version": "1.0.0",
-  "description": "An API that transcribes audio to text.",
+  "description": "An API that transcribes audio files to text using AI.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -18,3 +18,4 @@
   },
   "author": "Ayanfe",
   "license": "MIT"
+}
